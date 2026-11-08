@@ -433,6 +433,8 @@ if OS_QNX
  libunwind_la_SOURCES_aarch64_os_local = aarch64/Los-qnx.c
  libunwind_la_SOURCES_arm_os           = arm/Gos-other.c
  libunwind_la_SOURCES_arm_os_local     = arm/Los-other.c
+ libunwind_la_SOURCES_x86_os           = x86/Gos-qnx.c
+ libunwind_la_SOURCES_x86_os_local     = x86/Los-qnx.c x86/getcontext-qnx.S x86/setcontext-qnx.S
  libunwind_la_SOURCES_x86_64_os        = x86_64/Gos-qnx.c
  libunwind_la_SOURCES_x86_64_os_local  = x86_64/Los-qnx.c
  libunwind_coredump_la_SOURCES += coredump/_UCD_access_reg_qnx.c

@@ -142,3 +142,24 @@
 #define FREEBSD_UC_MCONTEXT_FPOWNED_FPU 0x20001
 #define FREEBSD_UC_MCONTEXT_FPOWNED_PCB 0x20002
 
+
+/* QNX-specific definitions: */
+
+/* Offsets for x86 QNX "ucontext_t" (the CPU registers are listed in x86/context.h
+   and have no segment registers unless __SEGMENTS__ is defined):  */
+
+#define QNX_UC_MCONTEXT_OFF             0x18
+#define QNX_UC_FPREGS_OFF               0x4c
+
+#define QNX_UC_EDI_OFF                  0x18
+#define QNX_UC_ESI_OFF                  0x1c
+#define QNX_UC_EBP_OFF                  0x20
+#define QNX_UC_EBX_OFF                  0x28
+#define QNX_UC_EDX_OFF                  0x2c
+#define QNX_UC_ECX_OFF                  0x30
+#define QNX_UC_EAX_OFF                  0x34
+#define QNX_UC_EIP_OFF                  0x38
+#define QNX_UC_CS_OFF                   0x3c
+#define QNX_UC_EFLAGS_OFF               0x40
+#define QNX_UC_ESP_OFF                  0x44
+#define QNX_UC_SS_OFF                   0x48

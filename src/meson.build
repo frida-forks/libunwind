@@ -120,6 +120,12 @@ elif target_machine.system() == 'qnx'
     _libunwind_srcs_aarch64_os_local = files('aarch64/Los-qnx.c')
     _libunwind_srcs_arm_os = files('arm/Gos-other.c')
     _libunwind_srcs_arm_os_local = files('arm/Los-other.c')
+    _libunwind_srcs_x86_os = files('x86/Gos-qnx.c')
+    _libunwind_srcs_x86_os_local = files(
+        'x86/Los-qnx.c',
+        'x86/getcontext-qnx.S',
+        'x86/setcontext-qnx.S',
+    )
     _libunwind_srcs_x86_64_os = files('x86_64/Gos-qnx.c')
     _libunwind_srcs_x86_64_os_local = files('x86_64/Los-qnx.c')
     _libunwind_coredump_srcs += files(
